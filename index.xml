@@ -1,0 +1,22 @@
+<craft name="page">
+    <parameter name="xmargin" type="int" default="10"/>
+    <parameter name="ymargin" type="int" default="10"/>
+    <parameter name="zmargin" type="int" default="1"/>
+    
+    <stack>
+        <g>
+            <content></content>
+        </g>
+        <script>
+            function main(params, scope){
+
+                var g = scope.solids[0].layout
+                
+                params.l = g.size.x + params.xmargin
+                params.w = g.size.y + params.ymargin
+                
+            }
+        </script>
+        <cube size="{{l}} {{w}} {{zmargin}}"></cube>
+    </stack>
+</craft>
