@@ -2,7 +2,7 @@
 Page module for CraftML
 
 ### Install
-    $ npm install craft-dome
+    $ npm install craft-page
 
 ### Parameters
 - xmargin: adjusts page margins on x-axis 
