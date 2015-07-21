@@ -5,17 +5,15 @@
     
     <stack>
         <g>
-            <content></content>
+            <content>
+                <cube></cube>
+            </content>
         </g>
         <script>
-            function main(params, scope){
-
-                var g = scope.solids[0].layout
-                
-                params.l = g.size.x + params.xmargin
-                params.w = g.size.y + params.ymargin
-                
-            }
+            var g = scope.solids[0].layout
+            
+            params.l = g.size.x + params.xmargin
+            params.w = g.size.y + params.ymargin
         </script>
         <cube size="{{l}} {{w}} {{zmargin}}"></cube>
     </stack>

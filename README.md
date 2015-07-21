@@ -1,8 +1,13 @@
 # craft-page
 Page module for CraftML
 
-### Install
-    $ npm install craft-page
+### Usage
+```html
+<craft>
+    <craft name="page" module="craft-page"/>
+    <page></page>
+</craft>
+```
 
 ### Parameters
 - xmargin: adjusts page margins on x-axis 
